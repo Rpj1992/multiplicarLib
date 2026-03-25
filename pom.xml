@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.Rpj1992</groupId>
-  <artifactId>MultiplicarLib</artifactId>
+  <artifactId>multiplicar-lib</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -14,6 +14,15 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
+  
+  <distributionManagement>
+  <repository>
+    <id>github</id> <!-- debe coincidir con el <server> en settings.xml -->
+    <name>GitHub rpj1992 Apache Maven Packages</name>
+    <url>https://maven.pkg.github.com/rpj1992/MultiplicarLib</url>
+  </repository>
+</distributionManagement>
+
 
   <build>
     <plugins>
